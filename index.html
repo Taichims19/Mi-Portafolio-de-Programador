@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Metadatos -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="Daniel Mendez">
+  <meta name="description" content="Portafolio de desarrollo wed de Daniel Mendez">
+  <meta name="keywords" content="HTML, CSS, JavaScrip, React">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet">
+
+  <!-- Titulo -->
+  <title>Daniel Mendez | Desarrollo Web Frontend</title>
+  <!-- fabicon -->
+  <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+  <!-- Barra de navegacion -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="#">
+          <img src="img/icono.png" width="50" alt="logo de la pagina">
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#sobre-mi-id">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectos-id">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonios-id">Testimonios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto-id">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seccion hero (principal) -->
+  <section class="hero align-items-stretch">
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+      <img class="hero-img-desarrollador rounded-circle" src="img/imagenes-desarrolladores/desarrollador-ejemplo1.png"
+        alt="Foto de Daniel Mendez">
+      <h1>Hola, Soy Daniel Mendez</h1>
+      <h2>Desarrollo sitios web y escribo articulos sobre programacion</h2>
+    </div>
+    <div class="hero-inferior">
+      <img class="hero-inferior-img img-fluid" src="img/hero-inferior.svg"
+        alt="Monitor, laptos y logos de Html, Css, JavaScrip">
+    </div>
+  </section>
+  <!-- Sobre mi -->
+  <section id="sobre-mi-id" class="sobre-mi seccion-oscura">
+    <div class="contenedor">
+      <h2 class="seccion-titulo">Conoce a Daniel Mendez</h2>
+      <p class="seccion-texto">Programador Junior amante del mundo de la programacion. Me encantan los retos y aprender
+        un poco mas dia a dia. Tratando siempre de ser mas innovador y creativo. Con un gran hambre de conocimiento y
+        haciendo uso de todas las nuevas tecnologias que aprendo, "siempre perseverando y nunca deteniendome"</p>
+    </div>
+  </section>
+  <!-- Experiencia -->
+  <section class="experiencia seccion-clara">
+    <div class="container text-center">
+      <div class="row">
+        <!-- Desarrollo Web -->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-laptop"></i>
+          <p class="experiencia-titulo">Desarrollo Web</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repellendus accusantium aperiam! Ea
+            nesciunt, earum rem quam.</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-danger">HTML</span>
+            <span class="badge text-bg-primary">CSS</span>
+            <span class="badge text-bg-warning">JavaScrip</span>
+            <span class="badge text-bg-info">React</span>
+          </div>
+        </div>
+        <!-- Articulos -->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-laptop"></i>
+          <p class="experiencia-titulo">Articulos</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repellendus accusantium aperiam! Ea
+            nesciunt, earum rem quam.</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-info">Escribir</span>
+            <span class="badge text-bg-info">Editar</span>
+            <span class="badge text-bg-info">Blogs</span>
+
+          </div>
+        </div>
+        <!-- Estudiante -->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-laptop"></i>
+          <p class="experiencia-titulo">Estudiante</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus repellendus accusantium aperiam! Ea
+            nesciunt, earum rem quam.</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-dark">FreeCodeCamp</span>
+            <span class="badge text-bg-success">Platzi</span>
+            <span class="badge text-bg-primary">Desarrollo Web</span>
+            <span class="badge text-bg-danger">Python</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos-id" class="proyectos-recientes seccion-clara d-flex flex-column ">
+    <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+    <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente </h3>
+    <!-- Galeria de Proyectos -->
+    <div class="container text-center proyectos-contenedor">
+      <div class="row">
+        <!-- Proyecto 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="img/proyecto1.png" alt="Proyecto 1">
+            <div class="overlay">
+              <p>Proyecto 1</p>
+              <p>InfoFactor</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/Taichims19/InfoFactor" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://info-factor-daniel-mendez.netlify.app/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="img/proyecto2.png" alt="Proyecto 2">
+            <div class="overlay">
+              <p>Proyecto 2</p>
+              <p>Coffee Bar</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/Taichims19/Coffee-Bar_Co" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://coffe-bar-daniel-web.netlify.app/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="img/proyecto4.png" alt="Proyecto 4">
+            <div class="overlay">
+              <p>Proyecto 3</p>
+              <p>bootstrap Responsive</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/Taichims19/Bootstrap-5-Practicas" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://mi-primer-sitio-web-daniel.netlify.app" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 4 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="img/proyecto3.png" alt="Proyecto 3">
+            <div class="overlay">
+              <p>Proyecto 1</p>
+              <p>App Movil Cursos</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/Taichims19/Proyecto-Final-de-Sass" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://cursos-digitales-escuela-digital.netlify.app/" target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 5 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="img/proyecto5.png" alt="Proyecto 5">
+            <div class="overlay">
+              <p>Proyecto 1</p>
+              <p>Pagina Web 5</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/Taichims19/InfoFactor" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://info-factor-daniel-mendez.netlify.app/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 6 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="img/proyecto6.png" alt="Proyecto 6">
+            <div class="overlay">
+              <p>Proyecto 1</p>
+              <p>Pagina Web 6</p>
+              <div class="iconos-contenedor">
+                <a href="https://github.com/Taichims19/InfoFactor" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://info-factor-daniel-mendez.netlify.app/" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="https://github.com/Taichims19" target="_blank" rel="noopener noreferrer">
+      <button type="button" class="btn btn-info">
+        Ver Mas de Mis Proyectos
+        <i class="bi bi-arrow-right-circle-fill"></i>
+      </button>
+    </a>
+  </section>
+
+  <!-- Articulos -->
+  <section class="articulos justify-content-star">
+    <h2 class="seccion-titulo texto-negro">Articulos</h2>
+    <div class="card">
+      <div class="card-header">
+        Más Recientes
+      </div>
+      <ul class="list-group list-group-flush">
+        <a href="https://www.freecodecamp.org/espanol/news" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">
+            El decorador @property en Python -como usarlo,ventajas y sintaxis
+          </li>
+        </a>
+        <a href="https://www.freecodecamp.org/espanol/news" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">
+            Python tutorial ciclos while - while true ejemplos de sintaxis y ciclos infinitos
+          </li>
+        </a>
+        <a href="https://www.freecodecamp.org/espanol/news" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">
+            Python leer archivo JSON - como cargar JSON desde un archivo y procesar dumps
+          </li>
+        </a>
+        <a href="https://www.freecodecamp.org/espanol/news" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">
+            Python como escribir un archivo - abrir, leer, escribir y otras funciones de archivos explicadas
+          </li>
+        </a>
+        <a href="https://www.freecodecamp.org/espanol/news" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">
+            ¿Para que se usa Phython? 10 +usos del lenguaje de programacion
+          </li>
+        </a>
+      </ul>
+    </div>
+    <a href="https://www.freecodecamp.org/espanol/news" target="_blank" rel="noopener noreferrer">
+      <button type="button" class="btn btn-info">
+        Ver mas articulos
+        <i class="bi bi-arrow-right-circle-fill"></i>
+      </button>
+    </a>
+  </section>
+
+  <!-- Testimonios -->
+  <section id="testimonios-id" class="testimonios seccion-clara">
+    <h2 class="seccion-titulo">Testimonios</h2>
+    <h3 class="seccion-descripcion">Estos son algunos testimonios de mis clientes...</h3>
+
+    <!-- Carrusel -->
+    <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="true">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="img/cliente1.svg" alt="Foto de Yoderson">
+            <p class="testimonio-texto">"Trabajar con Daniel ha sido una de las mejores decisiones que he tomado para mi
+              negocio. Su habilidad para programar es excepcional, pero lo que más valoro es su capacidad para entender
+              mis necesidades y traducirlas en soluciones prácticas. Gracias a su trabajo, mi sitio web ahora es más
+              eficiente y atractivo para mis clientes."</p>
+            <div class="testimonio-info">
+              <p class="cliente">Yoderson</p>
+              <p class="cargo">Gerente de Proyectos Web</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="img/cliente2.svg" alt="Foto de Nora">
+            <p class="testimonio-texto">"Estoy impresionada con el nivel de profesionalismo y conocimiento técnico que
+              Daniel ha demostrado durante nuestro proyecto juntos. Desde el principio, se aseguró de entender nuestros
+              requisitos y se aseguró de que estuviéramos en la misma página. El resultado final superó nuestras
+              expectativas y no dudaríamos en trabajar con él de nuevo."</p>
+            <div class="testimonio-info">
+              <p class="cliente">Nora</p>
+              <p class="cargo">Gerente de Diseño paginas Web</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="img/cliente3.svg" alt="Foto de Leonardo">
+            <p class="testimonio-texto">"Como emprendedor, siempre he sido cauteloso con tercerizar cualquier aspecto de
+              mi negocio, pero después de trabajar con Daniel, sé que tomé la decisión correcta. Su experiencia en
+              programación es evidente, pero lo que más aprecié fue su atención al detalle y su capacidad para resolver
+              problemas técnicos de manera eficiente. Definitivamente lo recomendaría a cualquier persona que busque un
+              desarrollador web confiable."</p>
+            <div class="testimonio-info">
+              <p class="cliente">Leonardo</p>
+              <p class="cargo">Gerente de Aprender a Programar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto-id" class="contacto seccion-oscura">
+    <div class="container">
+      <div class="container text-center rectangulo d-flex justify-content-evenly">
+        <div class="row">
+          <div class="col-12 col-md-4 seccion-titulo">
+            ¡Hablemos!
+          </div>
+          <div class="col-12 col-md-4 descripcion">
+            Contactame para iniciar tu proyecto de desarrollo web y hare que tu vision se vuelva realidad
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="mailto:danielms694@gmail.com" " rel=" noopener noreferrer">
+              <button type="button">
+                Contactarme
+                <i class="bi bi-envelope-check-fill"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Pie de Pagina (footer) -->
+  <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+    <img class="footer-logo" src="img/icono-blanco.svg" alt="Logo del Portafolio">
+    <p class="footer-texto text-center">
+      aprendo y creo todos los dias.<br>Creemos un Proyecto juntos
+    </p>
+    <div class="iconos-redes-sociales d-flex flex-wrap    align-items-center justify-content-center">
+      <a href="https://twitter.com/danielmendezs1" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-twitter"></i>
+      </a>
+      <a href="https://github.com/Taichims19" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="https:/www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com/taichi19_22/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="mailto:danielms694@gmail.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-envelope"></i>
+      </a>
+    </div>
+    <div class="derecho-de-autor">Creado por Daniel Mendez (2023) &#169;</div>
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+//Import de funciones y mas
+@use "sass:math";
+
+//aqui se guardan las variables
+
+//Importar tipografia
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap");
+//importar iconos
+@import url("https://kit.fontawesome.com/36f2e0049f.js");
+//fuentes
+$main-font: "Rubik Dirt", cursive;
+$main-font2: "Share Tech Mon", monospace;
+$main-font3: "Quicksand", sans-serif;
+$light: 300;
+$normal: 400;
+
+//guter
+$gutter: 1em;
+//Convertir px a em
+@function em($el, $parent: 16px) {
+  $em: math.div($el, $parent) * 1em;
+  @return $em;
+}
+@function rem($el, $parent: 16px) {
+  $rem: math.div($el, $parent) * 1rem;
+  @return $rem;
+}
+
+$font-size: em(14px);
+$h3-size: $font-size * 1.15;
+$h2-size: $font-size * 1.35;
+$h1-size: $font-size * 1.7;
+
+//z-index variables
+$z-index: (
+  tooltip: 100,
+  modal: 500,
+  overlay: 700,
+  offcanvas: 1000,
+);
+
+@function z-index($val) {
+  @return map-get($z-index, $val);
+}
+
+$colors: (
+  azul-base: #00b1f3,
+  azul-oscuro: #03151f,
+  azul-medio: #006bab,
+  azul-claro: #29daff,
+  rojo: #ff3532,
+  rojo-claro: #ff4946,
+  gris-oscuro: #19242b,
+  gris-claro: #cdcdcd,
+  success: #00cb30,
+  blanco: #ffffff,
+);
+//funcion para obtener color
+//@function color($color){
+//@return map-get($colors,$color);
+//} esta tambien sirve
+
+@function color($name) {
+  @each $key, $color in $colors {
+    @if ($key == $name) {
+      @return $color;
+    }
+  }
+  @warn "Color `#{$name}` not found in map!";
+  @return null;
+}
+
+//funcion para obtener imagenes
+@function img($img) {
+  @return url("../img/#{$img}");
+}

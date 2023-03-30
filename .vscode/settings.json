@@ -1,0 +1,39 @@
+{
+    "liveSassCompile.settings.formats": [
+      {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "./css",
+        "filename": "styles",
+        "command": "--no-source-map --use=math",
+        "createPathIfNotExist": true
+      }
+    ],
+    "liveSassCompile.settings.excludeList": [
+      "**/node_modules/**",
+      "**/*.map",
+      "!sass/styles.scss"
+    ],
+    "liveSassCompile.settings.includeItems": [
+      "sass/**"
+    ],
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.autoprefix": [
+      "> 1%",
+      "last 2 versions"
+    ],
+    "liveSassCompile.settings.useNewCompiler": true,
+    "liveSassCompile.settings.forceBaseDirectory": "",
+    "liveSassCompile.settings.useBrowserslist": true,
+    "liveSassCompile.settings.formatsAutoCleanEmptyLines": true,
+    "liveSassCompile.settings.showOutputWindow": true,
+    "liveSassCompile.settings.useBundles": true,
+    "liveSassCompile.settings.generateMinifiedCss": false,
+    "liveSassCompile.settings.mappingsToReplace": [
+      {
+        "mapRegex": "/sass/base/",
+        "replace": "/sass/styles.scss"
+      }
+    ]
+  }
+  
